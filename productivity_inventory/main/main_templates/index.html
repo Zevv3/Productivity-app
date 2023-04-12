@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card-deck">
+          <div class="card" style="background-color: #444; color: #fff;">
+            <div class="card-body">
+              <h5 class="card-title"><button type="button" onclick="openDialog()">Monday</button></h5>
+              <p class="card-text">Content for Monday</p>
+            </div>
+          </div>
+          <div class="card" style="background-color: #444; color: #fff;">
+            <div class="card-body">
+              <h5 class="card-title"><button type="button" onclick="openDialog()">Tuesday</button></h5>
+              <p class="card-text">Content for Tuesday</p>
+            </div>
+          </div>
+          <div class="card" style="background-color: #444; color: #fff;">
+            <div class="card-body">
+              <h5 class="card-title"><button type="button" onclick="openDialog()">Wednesday</button></h5>
+              <p class="card-text">Content for Wednesday</p>
+            </div>
+          </div>
+          <div class="card" style="background-color: #444; color: #fff;">
+            <div class="card-body">
+              <h5 class="card-title"><button type="button" onclick="openDialog()">Thursday</button></h5>
+              <p class="card-text">Content for Thursday</p>
+            </div>
+          </div>
+          <div class="card" style="background-color: #444; color: #fff;">
+            <div class="card-body">
+              <h5 class="card-title"><button type="button" onclick="openDialog()">Friday</button></h5>
+              <p class="card-text">Content for Friday</p>
+            </div>
+          </div>
+          <div class="card" style="background-color: #444; color: #fff;">
+            <div class="card-body">
+              <h5 class="card-title"><button type="button" onclick="openDialog()">Saturday</button></h5>
+              <p class="card-text">Content for Saturday</p>
+            </div>
+          </div>
+          <div class="card" style="background-color: #444; color: #fff;">
+            <div class="card-body">
+              <h5 class="card-title"><button type="button" onclick="openDialog()">Sunday</button></h5>
+              <p class="card-text">Content for Sunday</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    function openDialog(){
+      alert("This is a dialog box!");
+    }
+  </script>
+  
+  {% endblock %}
