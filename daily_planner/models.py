@@ -72,3 +72,10 @@ class Task(db.Model):
     
     def __repr__(self):
         return "Task added to your calendar!"
+    
+class TaskSchema(ma.Schema):
+    class Meta:
+        fields = ['id', 'task_name', 'task_content', 'days_of_week', 'repeat_weekly', 'user_token']
+
+task_schema = TaskSchema()
+tasks_schema = TaskSchema(many=True)
